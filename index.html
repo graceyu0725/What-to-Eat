@@ -293,7 +293,7 @@
         const restaurantList =
           JSON.parse(localStorage.getItem("restaurantList")) || [];
 
-        const color = colors[restaurantList.length % 5]
+        const color = colors[restaurantList.length % 5];
         wheel.addSegment({
           fillstyle: color,
           text: selectedRestaurant.name,
